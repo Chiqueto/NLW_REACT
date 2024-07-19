@@ -75,7 +75,7 @@ export function CreateTripPage() {
   }
 
   return (
-    <div className="h-screen flex items-center justify-center bg-pattern bg-no-repeat bg-center bg-zinc-950">
+    <div className="h-screen flex items-center justify-center bg-pattern bg-no-repeat bg-center">
       <div className="max-w-3xl w-full px-6 text-center space-y-10 " >
         <div className='space-y-4'>
           <div className='flex flex-col items-center'>

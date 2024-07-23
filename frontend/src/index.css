@@ -4,6 +4,17 @@
 
 *{
     min-width: 0;
+   
+}
+.rdp-root {
+  --rdp-accent-color: #1a2e05 !important;
+  --rdp-accent-background-color: #4d7c0f !important;
+  --rdp-today-color: #bef264 !important;
+}
+
+.rdp-chevron {
+  display: inline-block;
+  fill: #bef264 !important;
 }
 
 .custom-input{

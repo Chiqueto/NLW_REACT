@@ -1,7 +1,24 @@
 import { Link2, Plus } from "lucide-react";
 import { Button } from "../../components/button";
+import { FormEvent, useState } from "react";
+import { AddLinkModal } from "./add-link-modal";
 
 export function ImportantLinks() {
+  const [isAddNewLinkOpen, setAddNewLinkOpen] = useState(false)
+
+  function openAddNewLink(){
+    setAddNewLinkOpen(true)
+  }
+
+  function closeAddNewLink(){
+    setAddNewLinkOpen(false)
+  }
+
+  function saveNewLink(event: FormEvent<HTMLFormElement>){
+    event.preventDefault()
+    closeAddNewLink()
+  }
+
   return (
     <div className="space-y-6">
       <h2 className="font-semi-bold text-xl">Links Importantes</h2>
@@ -36,10 +53,21 @@ export function ImportantLinks() {
         </div>
       </div>
       
-      <Button variant="secondary" size="full">
+      <Button onClick={openAddNewLink} variant="secondary" size="full">
         <Plus className="size-5" /> 
         Cadastrar novo link
       </Button>
+
+      {isAddNewLinkOpen && (
+      <AddLinkModal 
+      closeAddNewLink={closeAddNewLink}
+      saveNewLink={saveNewLink}
+      />
+    )}
     </div>
+
+    
+
+
   );
 }

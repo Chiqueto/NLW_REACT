@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    min-width: 0;
+   
+}
+.rdp-root {
+  --rdp-accent-color: #1a2e05 !important;
+  --rdp-accent-background-color: #4d7c0f !important;
+}
+
+.custom-input{
+    ;
+}
+
+input{
+  color-scheme: dark;
+}
+
+  /* Chrome, Safari, Edge, Opera */
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px rgb(9,9,11) inset !important;
+    -webkit-text-fill-color: rgb(212,212,216) !important; /* Cor do texto preenchido */
+      color: rgb(212,212,216) !important; /* Cor do texto preenchido */
+    
+
+  }
+
+  /* Firefox */
+  input:-moz-autofill {
+    box-shadow: 0 0 0 1000px red inset !important;
+    -moz-text-fill-color: yellow !important;
+      color: yellow !important; /* Cor do texto preenchido */
+  }

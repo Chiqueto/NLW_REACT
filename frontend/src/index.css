@@ -5,3 +5,27 @@
 *{
     min-width: 0;
 }
+
+.custom-input{
+    ;
+}
+
+input{
+  color-scheme: dark;
+}
+
+  /* Chrome, Safari, Edge, Opera */
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px rgb(9,9,11) inset !important;
+    -webkit-text-fill-color: rgb(212,212,216) !important; /* Cor do texto preenchido */
+      color: rgb(212,212,216) !important; /* Cor do texto preenchido */
+    
+
+  }
+
+  /* Firefox */
+  input:-moz-autofill {
+    box-shadow: 0 0 0 1000px red inset !important;
+    -moz-text-fill-color: yellow !important;
+      color: yellow !important; /* Cor do texto preenchido */
+  }

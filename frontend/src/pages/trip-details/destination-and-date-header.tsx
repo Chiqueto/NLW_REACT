@@ -24,8 +24,9 @@ export function DestinationAndDateHeader() {
    [tripId]
   )
 
-  const displayedDate = trip ? 
-  format(trip.starts_at, "d' de 'LLL").concat(' até ').concat(format(trip.ends_at, "d' de 'LLL")) : null
+  const displayedDate = trip 
+    ? format(trip.starts_at, "d' de 'LLL").concat(' até ').concat(format(trip.ends_at, "d' de 'LLL")) 
+    : null
   //quero que essa primeira função seja executada, apenas quando o tripId for alterado
   
 
